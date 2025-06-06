@@ -1,0 +1,109 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 195 20% 95%; /* Light gray #F0F4F5 */
+    --foreground: 200 15% 25%; /* Dark cool gray for text */
+    --card: 195 20% 98%;
+    --card-foreground: 200 15% 25%;
+    --popover: 195 20% 98%;
+    --popover-foreground: 200 15% 25%;
+    --primary: 184 31% 42%; /* Muted teal #468A8F */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 184 30% 80%; /* Lighter teal */
+    --secondary-foreground: 184 30% 20%; /* Dark teal text for secondary */
+    --muted: 195 20% 90%;
+    --muted-foreground: 195 10% 50%;
+    --accent: 184 26% 56%; /* Soft blue #73A9AD */
+    --accent-foreground: 0 0% 100%; /* White */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 195 15% 88%;
+    --input: 195 15% 90%;
+    --ring: 184 31% 42%; /* Muted teal for ring */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar variables, can be adjusted if a distinct sidebar theme is needed, for now inherits */
+    --sidebar-background: 200 12% 18%; /* Darker, slightly desaturated teal/blue for sidebar */
+    --sidebar-foreground: 195 15% 85%; /* Light text for sidebar */
+    --sidebar-primary: 184 26% 56%; /* Soft blue for primary elements in sidebar */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 10% 25%; /* Slightly lighter than sidebar bg for accents */
+    --sidebar-accent-foreground: 195 15% 95%;
+    --sidebar-border: 200 10% 30%;
+    --sidebar-ring: 184 26% 56%;
+
+    /* Custom Badge Status Colors */
+    --badge-upload-background: 210 90% 50%; /* Blue */
+    --badge-upload-foreground: 210 90% 95%; /* Light Blue text */
+    --badge-rilis-background: 145 63% 42%;  /* Green */
+    --badge-rilis-foreground: 145 63% 95%;  /* Light Green text */
+    --badge-pending-background: 30 90% 50%; /* Orange */
+    --badge-pending-foreground: 30 90% 95%; /* Light Orange text */
+  }
+
+  .dark {
+    --background: 200 10% 10%; /* Dark cool gray */
+    --foreground: 195 15% 90%; /* Light cool gray text */
+    --card: 200 10% 12%;
+    --card-foreground: 195 15% 90%;
+    --popover: 200 10% 12%;
+    --popover-foreground: 195 15% 90%;
+    --primary: 184 31% 52%; /* Lighter Muted teal for dark mode */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 184 30% 25%; /* Darker teal for secondary background */
+    --secondary-foreground: 184 30% 85%; /* Light teal text for secondary */
+    --muted: 200 10% 18%;
+    --muted-foreground: 195 10% 60%;
+    --accent: 184 26% 66%; /* Lighter Soft blue for dark mode */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 200 10% 20%;
+    --input: 200 10% 22%;
+    --ring: 184 31% 52%; /* Lighter Muted teal for ring */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 200 10% 8%; 
+    --sidebar-foreground: 195 15% 80%;
+    --sidebar-primary: 184 26% 66%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 10% 15%;
+    --sidebar-accent-foreground: 195 15% 90%;
+    --sidebar-border: 200 10% 20%;
+    --sidebar-ring: 184 26% 66%;
+
+    /* Custom Badge Status Colors - Dark Mode */
+    --badge-upload-background: 210 70% 45%;
+    --badge-upload-foreground: 210 70% 90%;
+    --badge-rilis-background: 145 50% 40%;
+    --badge-rilis-foreground: 145 50% 90%;
+    --badge-pending-background: 30 70% 45%;
+    --badge-pending-foreground: 30 70% 90%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
